@@ -1,0 +1,42 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Service</title>
+</head>
+<body>
+<script type="text/javascript" src="js/action.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+            crossorigin="anonymous"></script>
+
+    <form>
+        <div>
+            <h2>Here should be keys and values</h2>
+            <div class="row">
+                <button name="addKeys" type="button" onclick="addKey()">Add key</button>
+            </div>
+            <br>
+            <input id="test"/>
+            <br>
+            <table id="myTable">
+                <thead>
+                    <th>Key</th>
+                    <th>Value</th>
+                </thead>
+                <!--<tr th:each="item, itemStat : *{keys}">-->
+                    <!--<td><input name="key" th:field="*{keys[__${itemStat.index}__].key}"/></td>-->
+                    <!--<td><input name="value" th:field="*{keys[__${itemStat.index}__].value}"/></td>-->
+                <!--</tr>-->
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <button type="button" onclick="collectData()">Collect data</button>
+    </form>
+    <div id="status"></div>
+</body>
+</html>
